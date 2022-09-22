@@ -1,1 +1,11 @@
 /* give your assignment a fun background color */
+body {
+    background-color: orangered;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    background-color: rgb(243, 213, 170);
+}
