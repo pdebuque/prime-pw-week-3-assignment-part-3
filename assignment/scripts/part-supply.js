@@ -6,22 +6,22 @@ console.log('****** Part Supply *******');
 let partsNeeded = 40
 console.log('1. Number of partsNeeded:', partsNeeded);
 
-// 2. Create a variable call 'supplyChanges' set it to an array containing
+// 2. Create a variable called 'supplyChanges' set it to an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11
 const supplyChanges = [3, 5, -6, 0, 7, 11];
 console.log('2. Array of supplyChanges:', supplyChanges);
 
 // 3. Console log the value of the second item in the 'supplyChanges' array
-console.log('3. Second supplyChange is:', supplyChanges[1]);
+console.log('3. Second supply change is:', supplyChanges[1]);
 
 // 4. The last item was added by mistake. Remove it from the 'supplyChanges' 
 //    array & console.log the value removed.
 
-console.log('4. Removed item:', supplyChanges.splice(1, 1));
+console.log('4. Removed item:', supplyChanges.pop());
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 supplyChanges.push(25);
-console.log('5. Adding 25 to supplyChanges.', supplyChanges);
+console.log('5. Added 25 to supplyChanges.', supplyChanges);
 
 // 6. Write a `for` loop that shows each value in the 'supplyChanges' array
 //    Use a console.log formatted as follows, where x is the value from the array
@@ -30,7 +30,7 @@ console.log('5. Adding 25 to supplyChanges.', supplyChanges);
 //    - if the value is negative, format the log as 'Removed x parts.' 
 
 console.log('6. Showing supplyChanges...');
-for (let i = 0; i <= supplyChanges.length; i++) {
+for (let i = 0; i < supplyChanges.length; i++) {
     if (supplyChanges[i] > 0) {
         console.log(`Added ${supplyChanges[i]} parts.`)
     } else if (supplyChanges[i] < 0) {
@@ -72,7 +72,7 @@ console.log('8. Total supplies available is:', totalParts);
 //    Then log how many boxes were filled, and how many parts are left over.
 console.log('9. Filling boxes with a "while" loop');
 
-totalParts += 572;
+totalParts = 572;
 let boxCount = 0;
 while (totalParts > 7) {
     boxCount++;
